@@ -8,17 +8,18 @@ where t.route_id = 'LINE-5C'
 order by t.scheduled_departure_utc
 limit 20;
 
+-- Ordered stops for a specific route
 select
     rs.stop_sequence,
-    s.id, 
+    s.id as stop_id, 
     s.city_id, 
     s.name
 from stops s 
 join route_stops rs on s.id = rs.stop_id
 where rs.route_id = 'LINE-5C'
-order by
-rs.stop_sequence;
+order by rs.stop_sequence;
 
+-- All routes with the number of trips for each route
 select
     r.id as route_id,
     r.short_name,
