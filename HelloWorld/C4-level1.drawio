@@ -1,0 +1,39 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Side-1" id="pHeOyrm91l9S_P5C-enZ">
+    <mxGraphModel dx="1209" dy="861" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9mf9IFPzvpQx22gaWrrm-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="Level 1: HelloWorld App System&amp;nbsp; - context diagram" vertex="1">
+          <mxGeometry height="30" width="300" x="50" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="9mf9IFPzvpQx22gaWrrm-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;color: rgb(29, 33, 37); font-family: system-ui, -apple-system, &amp;quot;Segoe UI&amp;quot;, Roboto, &amp;quot;Helvetica Neue&amp;quot;, &amp;quot;Noto Sans&amp;quot;, &amp;quot;Liberation Sans&amp;quot;, Arial, sans-serif, &amp;quot;Apple Color Emoji&amp;quot;, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;, &amp;quot;Noto Color Emoji&amp;quot;; font-size: 15px; text-align: start; background-color: rgb(244, 244, 244);&quot;&gt;HelloWorld.App&lt;/span&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="364" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9mf9IFPzvpQx22gaWrrm-3" edge="1" parent="1" style="shape=link;html=1;rounded=0;" value="">
+          <mxGeometry relative="1" width="100" as="geometry">
+            <mxPoint x="40" y="110" as="sourcePoint" />
+            <mxPoint x="800" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9mf9IFPzvpQx22gaWrrm-4" edge="1" parent="1" source="9mf9IFPzvpQx22gaWrrm-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=8 8;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="340" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9mf9IFPzvpQx22gaWrrm-5" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="USer" vertex="1">
+          <mxGeometry height="60" width="30" x="220" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9mf9IFPzvpQx22gaWrrm-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Display random greetings in selected language" vertex="1">
+          <mxGeometry height="30" width="120" x="364" y="254" as="geometry" />
+        </mxCell>
+        <mxCell id="9mf9IFPzvpQx22gaWrrm-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="9mf9IFPzvpQx22gaWrrm-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="C4 diagram" vertex="1">
+          <mxGeometry height="30" width="90" x="55" y="35" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
