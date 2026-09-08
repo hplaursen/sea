@@ -43,7 +43,7 @@
         <mxCell id="e8" edge="1" parent="1" source="messagingService" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;dashed=1;" target="notificationService" value="Message events">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="e9" edge="1" parent="1" source="eventService" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;dashed=1;" target="notificationService" value="Event events">
+        <mxCell id="e9" edge="1" parent="1" source="eventService" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;dashed=1;" target="notificationService" value="Meeting&amp;nbsp;events">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
