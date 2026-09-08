@@ -1,0 +1,15 @@
+services:
+  article-db:
+    image: postgres:18
+    container_name: articledatabase
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ArticleDatabase
+    ports:
+      - "5432:5432"
+    volumes:
+      - articledatabase-data:/var/lib/postgresql
+
+volumes:
+  articledatabase-data:

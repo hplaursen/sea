@@ -1,0 +1,537 @@
+{
+  "configuration" : { },
+  "description" : "Description",
+  "documentation" : { },
+  "id" : 1,
+  "lastModifiedDate" : "2026-09-08T20:15:08Z",
+  "model" : {
+    "people" : [ {
+      "description" : "reates, reviews and publishes articles",
+      "id" : "1",
+      "name" : "Publisher",
+      "properties" : {
+        "structurizr.dsl.identifier" : "Publisher"
+      },
+      "relationships" : [ {
+        "description" : "Interacts with",
+        "destinationId" : "4",
+        "id" : "20",
+        "sourceId" : "1",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Interacts with",
+        "destinationId" : "3",
+        "id" : "21",
+        "linkedRelationshipId" : "20",
+        "sourceId" : "1"
+      } ],
+      "tags" : "Element,Person"
+    }, {
+      "description" : "Reads articles, posts comments and subscribes to the newsletter",
+      "id" : "2",
+      "name" : "Reader",
+      "properties" : {
+        "structurizr.dsl.identifier" : "Reader"
+      },
+      "relationships" : [ {
+        "description" : "Interacts with",
+        "destinationId" : "5",
+        "id" : "22",
+        "sourceId" : "2",
+        "tags" : "Relationship"
+      }, {
+        "description" : "Interacts with",
+        "destinationId" : "3",
+        "id" : "23",
+        "linkedRelationshipId" : "22",
+        "sourceId" : "2"
+      } ],
+      "tags" : "Element,Person"
+    } ],
+    "softwareSystems" : [ {
+      "containers" : [ {
+        "description" : "C#.NET",
+        "documentation" : { },
+        "id" : "4",
+        "name" : "Web Application",
+        "properties" : {
+          "structurizr.dsl.identifier" : "WebApp"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "6",
+          "id" : "24",
+          "sourceId" : "4",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Uses",
+          "destinationId" : "8",
+          "id" : "26",
+          "sourceId" : "4",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Application used by publishers to create, review and publish articles"
+      }, {
+        "description" : "C#.NET",
+        "documentation" : { },
+        "id" : "5",
+        "name" : "Web Site",
+        "properties" : {
+          "structurizr.dsl.identifier" : "WebSite"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "11",
+          "id" : "30",
+          "sourceId" : "5",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Uses",
+          "destinationId" : "12",
+          "id" : "32",
+          "sourceId" : "5",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Uses",
+          "destinationId" : "14",
+          "id" : "35",
+          "sourceId" : "5",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Website used by readers to read articles, comment and subscribe"
+      }, {
+        "description" : "C#.NET Web API",
+        "documentation" : { },
+        "id" : "6",
+        "name" : "DraftService",
+        "properties" : {
+          "structurizr.dsl.identifier" : "DraftService"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "7",
+          "id" : "25",
+          "sourceId" : "6",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Provides a list of supported languages."
+      }, {
+        "description" : "C#.NET Web API",
+        "documentation" : { },
+        "id" : "7",
+        "name" : "DraftDatabase",
+        "properties" : {
+          "structurizr.dsl.identifier" : "DraftDatabase"
+        },
+        "tags" : "Element,Container",
+        "technology" : "Provides a list of supported languages."
+      }, {
+        "description" : "C#.NET Web API",
+        "documentation" : { },
+        "id" : "8",
+        "name" : "publisherService",
+        "properties" : {
+          "structurizr.dsl.identifier" : "publisherService"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "18",
+          "id" : "27",
+          "sourceId" : "8",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Uses",
+          "destinationId" : "9",
+          "id" : "28",
+          "sourceId" : "8",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Provides a list of supported languages."
+      }, {
+        "description" : "C#.NET Web API",
+        "documentation" : { },
+        "id" : "9",
+        "name" : "ArticleQueue",
+        "properties" : {
+          "structurizr.dsl.identifier" : "ArticleQueue"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "10",
+          "id" : "29",
+          "sourceId" : "9",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Provides a list of supported languages."
+      }, {
+        "description" : "C#.NET Web API",
+        "documentation" : { },
+        "id" : "10",
+        "name" : "ArticleDatabase",
+        "properties" : {
+          "structurizr.dsl.identifier" : "ArticleDatabase"
+        },
+        "tags" : "Element,Container",
+        "technology" : "Provides a list of supported languages."
+      }, {
+        "description" : "C#.NET Web API",
+        "documentation" : { },
+        "id" : "11",
+        "name" : "ArticleService",
+        "properties" : {
+          "structurizr.dsl.identifier" : "ArticleService"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "10",
+          "id" : "31",
+          "sourceId" : "11",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Provides a list of supported languages."
+      }, {
+        "description" : "C#.NET Web API",
+        "documentation" : { },
+        "id" : "12",
+        "name" : "CommentService",
+        "properties" : {
+          "structurizr.dsl.identifier" : "CommentService"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "18",
+          "id" : "33",
+          "sourceId" : "12",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Uses",
+          "destinationId" : "13",
+          "id" : "34",
+          "sourceId" : "12",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Provides a random greeting based on the language."
+      }, {
+        "description" : "C#.NET Web API",
+        "documentation" : { },
+        "id" : "13",
+        "name" : "CommentDatabase",
+        "properties" : {
+          "structurizr.dsl.identifier" : "CommentDatabase"
+        },
+        "tags" : "Element,Container",
+        "technology" : "Provides a random greeting based on the language."
+      }, {
+        "description" : "C#.NET Web API",
+        "documentation" : { },
+        "id" : "14",
+        "name" : "SubscriberService",
+        "properties" : {
+          "structurizr.dsl.identifier" : "SubscriberService"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "15",
+          "id" : "36",
+          "sourceId" : "14",
+          "tags" : "Relationship"
+        }, {
+          "description" : "Uses",
+          "destinationId" : "16",
+          "id" : "37",
+          "sourceId" : "14",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Provides a random greeting based on the language."
+      }, {
+        "description" : "C#.NET Web API",
+        "documentation" : { },
+        "id" : "15",
+        "name" : "SubscriberDatabase",
+        "properties" : {
+          "structurizr.dsl.identifier" : "SubscriberDatabase"
+        },
+        "tags" : "Element,Container",
+        "technology" : "Provides a random greeting based on the language."
+      }, {
+        "description" : "C#.NET Web API",
+        "documentation" : { },
+        "id" : "16",
+        "name" : "SubscriberQueue",
+        "properties" : {
+          "structurizr.dsl.identifier" : "SubscriberQueue"
+        },
+        "tags" : "Element,Container",
+        "technology" : "Provides a random greeting based on the language."
+      }, {
+        "description" : "C#.NET Web API",
+        "documentation" : { },
+        "id" : "17",
+        "name" : "NewsletterService",
+        "properties" : {
+          "structurizr.dsl.identifier" : "NewsletterService"
+        },
+        "tags" : "Element,Container",
+        "technology" : "Distribute happy news arround the world"
+      }, {
+        "description" : "C#.NET Web API",
+        "documentation" : { },
+        "id" : "18",
+        "name" : "ProfanityService",
+        "properties" : {
+          "structurizr.dsl.identifier" : "ProfanityService"
+        },
+        "relationships" : [ {
+          "description" : "Uses",
+          "destinationId" : "19",
+          "id" : "38",
+          "sourceId" : "18",
+          "tags" : "Relationship"
+        } ],
+        "tags" : "Element,Container",
+        "technology" : "Provides a random greeting based on the language."
+      }, {
+        "description" : "C#.NET Web API",
+        "documentation" : { },
+        "id" : "19",
+        "name" : "ProfanityDatabase",
+        "properties" : {
+          "structurizr.dsl.identifier" : "ProfanityDatabase"
+        },
+        "tags" : "Element,Container",
+        "technology" : "Provides a random greeting based on the language."
+      } ],
+      "description" : "A website and newsletter that distribute happy news arround the world",
+      "documentation" : { },
+      "id" : "3",
+      "name" : "Happy Headlines System",
+      "properties" : {
+        "structurizr.dsl.identifier" : "HappyHeadlinesSystem"
+      },
+      "tags" : "Element,Software System"
+    } ]
+  },
+  "name" : "Name",
+  "properties" : {
+    "structurizr.inspection.error" : "43",
+    "structurizr.dsl" : "d29ya3NwYWNlIHsKICAgIG1vZGVsIHsKICAgICAgICBQdWJsaXNoZXIgPSBwZXJzb24gIlB1Ymxpc2hlciIgInJlYXRlcywgcmV2aWV3cyBhbmQgcHVibGlzaGVzIGFydGljbGVzIgogICAgICAgIFJlYWRlciA9IHBlcnNvbiAiUmVhZGVyIiAiUmVhZHMgYXJ0aWNsZXMsIHBvc3RzIGNvbW1lbnRzIGFuZCBzdWJzY3JpYmVzIHRvIHRoZSBuZXdzbGV0dGVyIiAgICAgIAoKICAgICAgICBIYXBweUhlYWRsaW5lc1N5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJIYXBweSBIZWFkbGluZXMgU3lzdGVtIiAiQSB3ZWJzaXRlIGFuZCBuZXdzbGV0dGVyIHRoYXQgZGlzdHJpYnV0ZSBoYXBweSBuZXdzIGFycm91bmQgdGhlIHdvcmxkIiB7CiAgICAgICAgICAgIFdlYkFwcCA9IGNvbnRhaW5lciAiV2ViIEFwcGxpY2F0aW9uIiAiQyMuTkVUIiAiQXBwbGljYXRpb24gdXNlZCBieSBwdWJsaXNoZXJzIHRvIGNyZWF0ZSwgcmV2aWV3IGFuZCBwdWJsaXNoIGFydGljbGVzIgogICAgICAgICAgICBXZWJTaXRlID0gY29udGFpbmVyICJXZWIgU2l0ZSIgIkMjLk5FVCIgIldlYnNpdGUgdXNlZCBieSByZWFkZXJzIHRvIHJlYWQgYXJ0aWNsZXMsIGNvbW1lbnQgYW5kIHN1YnNjcmliZSIKCiAgICAgICAgICAgIERyYWZ0U2VydmljZSA9IGNvbnRhaW5lciAiRHJhZnRTZXJ2aWNlIiAiQyMuTkVUIFdlYiBBUEkiICJQcm92aWRlcyBhIGxpc3Qgb2Ygc3VwcG9ydGVkIGxhbmd1YWdlcy4iIHsKICAgICAgICAgICAgfSAKICAgICAgICAgICAgRHJhZnREYXRhYmFzZSA9IGNvbnRhaW5lciAiRHJhZnREYXRhYmFzZSIgIkMjLk5FVCBXZWIgQVBJIiAiUHJvdmlkZXMgYSBsaXN0IG9mIHN1cHBvcnRlZCBsYW5ndWFnZXMuIiB7CiAgICAgICAgICAgIH0gCiAgICAgICAgICAgIHB1Ymxpc2hlclNlcnZpY2UgPSBjb250YWluZXIgInB1Ymxpc2hlclNlcnZpY2UiICJDIy5ORVQgV2ViIEFQSSIgIlByb3ZpZGVzIGEgbGlzdCBvZiBzdXBwb3J0ZWQgbGFuZ3VhZ2VzLiIgewogICAgICAgICAgICB9CiAgICAgICAgICAgIEFydGljbGVRdWV1ZSA9IGNvbnRhaW5lciAiQXJ0aWNsZVF1ZXVlIiAiQyMuTkVUIFdlYiBBUEkiICJQcm92aWRlcyBhIGxpc3Qgb2Ygc3VwcG9ydGVkIGxhbmd1YWdlcy4iIHsKICAgICAgICAgICAgfQogICAgICAgICAgICBBcnRpY2xlRGF0YWJhc2UgPSBjb250YWluZXIgIkFydGljbGVEYXRhYmFzZSIgIkMjLk5FVCBXZWIgQVBJIiAiUHJvdmlkZXMgYSBsaXN0IG9mIHN1cHBvcnRlZCBsYW5ndWFnZXMuIiB7CiAgICAgICAgICAgIH0KCgogICAgICAgICAgICBBcnRpY2xlU2VydmljZSA9IGNvbnRhaW5lciAiQXJ0aWNsZVNlcnZpY2UiICJDIy5ORVQgV2ViIEFQSSIgIlByb3ZpZGVzIGEgbGlzdCBvZiBzdXBwb3J0ZWQgbGFuZ3VhZ2VzLiIgewogICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICBDb21tZW50U2VydmljZSA9IGNvbnRhaW5lciAiQ29tbWVudFNlcnZpY2UiICJDIy5ORVQgV2ViIEFQSSIgIlByb3ZpZGVzIGEgcmFuZG9tIGdyZWV0aW5nIGJhc2VkIG9uIHRoZSBsYW5ndWFnZS4iIHsKICAgICAgICAgICAgfQoKICAgICAgICAgICAgQ29tbWVudERhdGFiYXNlID0gY29udGFpbmVyICJDb21tZW50RGF0YWJhc2UiICJDIy5ORVQgV2ViIEFQSSIgIlByb3ZpZGVzIGEgcmFuZG9tIGdyZWV0aW5nIGJhc2VkIG9uIHRoZSBsYW5ndWFnZS4iIHsKICAgICAgICAgICAgfQoKICAgICAgICAgICAgU3Vic2NyaWJlclNlcnZpY2UgPSBjb250YWluZXIgIlN1YnNjcmliZXJTZXJ2aWNlIiAiQyMuTkVUIFdlYiBBUEkiICJQcm92aWRlcyBhIHJhbmRvbSBncmVldGluZyBiYXNlZCBvbiB0aGUgbGFuZ3VhZ2UuIiB7CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIFN1YnNjcmliZXJEYXRhYmFzZSA9IGNvbnRhaW5lciAiU3Vic2NyaWJlckRhdGFiYXNlIiAiQyMuTkVUIFdlYiBBUEkiICJQcm92aWRlcyBhIHJhbmRvbSBncmVldGluZyBiYXNlZCBvbiB0aGUgbGFuZ3VhZ2UuIiB7CiAgICAgICAgICAgIH0KCiAgICAgICAgICAgIFN1YnNjcmliZXJRdWV1ZSA9IGNvbnRhaW5lciAiU3Vic2NyaWJlclF1ZXVlIiAiQyMuTkVUIFdlYiBBUEkiICJQcm92aWRlcyBhIHJhbmRvbSBncmVldGluZyBiYXNlZCBvbiB0aGUgbGFuZ3VhZ2UuIiB7CiAgICAgICAgICAgIH0KCgogICAgICAgICAgICBOZXdzbGV0dGVyU2VydmljZSA9IGNvbnRhaW5lciAiTmV3c2xldHRlclNlcnZpY2UiICJDIy5ORVQgV2ViIEFQSSIgIkRpc3RyaWJ1dGUgaGFwcHkgbmV3cyBhcnJvdW5kIHRoZSB3b3JsZCIKICAgICAgICAgICAgUHJvZmFuaXR5U2VydmljZSA9IGNvbnRhaW5lciAiUHJvZmFuaXR5U2VydmljZSIgIkMjLk5FVCBXZWIgQVBJIiAiUHJvdmlkZXMgYSByYW5kb20gZ3JlZXRpbmcgYmFzZWQgb24gdGhlIGxhbmd1YWdlLiIgewogICAgICAgICAgICB9CiAgICAgICAgICAgIFByb2Zhbml0eURhdGFiYXNlID0gY29udGFpbmVyICJQcm9mYW5pdHlEYXRhYmFzZSIgIkMjLk5FVCBXZWIgQVBJIiAiUHJvdmlkZXMgYSByYW5kb20gZ3JlZXRpbmcgYmFzZWQgb24gdGhlIGxhbmd1YWdlLiIgewogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIAogICAgICAgIC8vIFJlbGF0aW9uc2hpcHMKICAgICAgICBQdWJsaXNoZXIgLT4gV2ViQXBwICJJbnRlcmFjdHMgd2l0aCIKICAgICAgICBSZWFkZXIgLT4gV2ViU2l0ZSAiSW50ZXJhY3RzIHdpdGgiCgogICAgICAgIFdlYkFwcCAtPiBEcmFmdFNlcnZpY2UgIlVzZXMiCiAgICAgICAgRHJhZnRTZXJ2aWNlIC0+IERyYWZ0RGF0YWJhc2UgIlVzZXMiCiAgICAgICAgV2ViQXBwIC0+IHB1Ymxpc2hlclNlcnZpY2UgIlVzZXMiCiAgICAgICAgcHVibGlzaGVyU2VydmljZSAtPiBQcm9GYW5pdHlTZXJ2aWNlICJVc2VzIiAKICAgICAgICBwdWJsaXNoZXJTZXJ2aWNlIC0+IEFydGljbGVRdWV1ZSAiVXNlcyIgCiAgICAgICAgQXJ0aWNsZVF1ZXVlIC0+IEFydGljbGVEYXRhYmFzZSAiVXNlcyIgCgogICAgICAgIFdlYlNpdGUgLT4gQXJ0aWNsZVNlcnZpY2UgIlVzZXMiIAogICAgICAgIEFydGljbGVTZXJ2aWNlIC0+IEFydGljbGVEYXRhYmFzZSAiVXNlcyIgCiAgICAgICAgV2ViU2l0ZSAtPiBDb21tZW50U2VydmljZSAiVXNlcyIgCiAgICAgICAgQ29tbWVudFNlcnZpY2UgLT4gUHJvZmFuaXR5U2VydmljZSAiVXNlcyIgCiAgICAgICAgQ29tbWVudFNlcnZpY2UgLT4gQ29tbWVudERhdGFiYXNlICJVc2VzIiAKICAgICAgICBXZWJTaXRlIC0+IFN1YnNjcmliZXJTZXJ2aWNlICJVc2VzIiAKICAgICAgICBTdWJzY3JpYmVyU2VydmljZSAtPiBTdWJzY3JpYmVyRGF0YWJhc2UgIlVzZXMiIAogICAgICAgIFN1YnNjcmliZXJTZXJ2aWNlIC0+IFN1YnNjcmliZXJRdWV1ZSAiVXNlcyIgCgogICAgICAgUHJvRmFuaXR5U2VydmljZSAtPiBQcm9mYW5pdHlEYXRhYmFzZSAiVXNlcyIgCiAgICB9CgogICAgdmlld3MgewogICAgICAgIHN0eWxlcyB7CiAgICAgICAgICAgIGVsZW1lbnQgIkVsZW1lbnQiIHsKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJQZXJzb24iIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgIzliMTkxZgogICAgICAgICAgICAgICAgc2hhcGUgcGVyc29uCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiU29mdHdhcmUgU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICNiYTFlMjUKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJBcHAiIHsKICAgICAgICAgICAgICAgIHNoYXBlICJNb2JpbGVEZXZpY2VMYW5kc2NhcGUiCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiRGF0YWJhc2UiIHsKICAgICAgICAgICAgICAgIHNoYXBlIGN5bGluZGVyCiAgICAgICAgICAgIH0KICAgICAgICAgICAgZWxlbWVudCAiQ29udGFpbmVyIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICNkOTIzMmIKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJDb21wb25lbnQiIHsKICAgICAgICAgICAgICAgIGJhY2tncm91bmQgI0U2NkM1QQogICAgICAgICAgICB9CiAgICAgICAgICAgIGVsZW1lbnQgIldlYkJyb3dzZXIiIHsKICAgICAgICAgICAgICAgIHNoYXBlIFdlYkJyb3dzZXIKICAgICAgICAgICAgfQogICAgICAgIH0KICAgIH0KfQ==",
+    "structurizr.inspection.info" : "0",
+    "structurizr.inspection.ignore" : "0",
+    "structurizr.inspection.warning" : "0"
+  },
+  "views" : {
+    "configuration" : {
+      "styles" : {
+        "elements" : [ {
+          "shape" : "MobileDeviceLandscape",
+          "tag" : "App"
+        }, {
+          "background" : "#e66c5a",
+          "tag" : "Component"
+        }, {
+          "background" : "#d9232b",
+          "tag" : "Container"
+        }, {
+          "shape" : "Cylinder",
+          "tag" : "Database"
+        }, {
+          "color" : "#ffffff",
+          "tag" : "Element"
+        }, {
+          "background" : "#9b191f",
+          "shape" : "Person",
+          "tag" : "Person"
+        }, {
+          "background" : "#ba1e25",
+          "tag" : "Software System"
+        }, {
+          "shape" : "WebBrowser",
+          "tag" : "WebBrowser"
+        } ]
+      },
+      "terminology" : { }
+    },
+    "containerViews" : [ {
+      "automaticLayout" : {
+        "edgeSeparation" : 50,
+        "nodeSeparation" : 50,
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 100,
+        "vertices" : true
+      },
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "4",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "5",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "6",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "7",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "8",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "9",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "10",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "11",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "12",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "13",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "14",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "15",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "16",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "17",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "18",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "19",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "externalSoftwareSystemBoundariesVisible" : false,
+      "generatedKey" : true,
+      "key" : "Container-001",
+      "name" : "Container View: Happy Headlines System",
+      "order" : 3,
+      "relationships" : [ {
+        "id" : "20"
+      }, {
+        "id" : "22"
+      }, {
+        "id" : "24"
+      }, {
+        "id" : "25"
+      }, {
+        "id" : "26"
+      }, {
+        "id" : "27"
+      }, {
+        "id" : "28"
+      }, {
+        "id" : "29"
+      }, {
+        "id" : "30"
+      }, {
+        "id" : "31"
+      }, {
+        "id" : "32"
+      }, {
+        "id" : "33"
+      }, {
+        "id" : "34"
+      }, {
+        "id" : "35"
+      }, {
+        "id" : "36"
+      }, {
+        "id" : "37"
+      }, {
+        "id" : "38"
+      } ],
+      "softwareSystemId" : "3"
+    } ],
+    "systemContextViews" : [ {
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "generatedKey" : true,
+      "key" : "SystemContext-001",
+      "name" : "System Context View: Happy Headlines System",
+      "order" : 2,
+      "relationships" : [ {
+        "id" : "21"
+      }, {
+        "id" : "23"
+      } ],
+      "softwareSystemId" : "3"
+    } ],
+    "systemLandscapeViews" : [ {
+      "elements" : [ {
+        "id" : "1",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "2",
+        "x" : 0,
+        "y" : 0
+      }, {
+        "id" : "3",
+        "x" : 0,
+        "y" : 0
+      } ],
+      "enterpriseBoundaryVisible" : true,
+      "generatedKey" : true,
+      "key" : "SystemLandscape-001",
+      "name" : "System Landscape View",
+      "order" : 1,
+      "relationships" : [ {
+        "id" : "21"
+      }, {
+        "id" : "23"
+      } ]
+    } ]
+  }
+}
