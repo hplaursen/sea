@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Side-1" id="OeK2V52rnEk6thhubiw9">
+    <mxGraphModel adaptiveColors="auto" dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Service Boundaries and Communication" style="text;html=1;fontSize=20;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="220" y="20" width="1060" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="user" value="Users" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="userService" value="User Service" style="swimlane;startSize=28;fillColor=#e8f4f8;strokeColor=#6c8ebf;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="100" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="userApi" value="Manages user accounts" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;" vertex="1" parent="userService">
+          <mxGeometry x="20" y="45" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="userDb" value="User Store" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="userService">
+          <mxGeometry x="175" y="42" width="65" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="serverService" value="Server Service" style="swimlane;startSize=28;fillColor=#e8f5e9;strokeColor=#82b366;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="100" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="serverApi" value="Manages servers and configuration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;" vertex="1" parent="serverService">
+          <mxGeometry x="20" y="45" width="145" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="serverDb" value="Server Store" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="serverService">
+          <mxGeometry x="180" y="42" width="65" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="channelService" value="Channel Service" style="swimlane;startSize=28;fillColor=#fff0e6;strokeColor=#d79b00;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="100" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="channelApi" value="Manages channels and configuration" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d79b00;" vertex="1" parent="channelService">
+          <mxGeometry x="20" y="45" width="145" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="channelDb" value="Channel Store" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="channelService">
+          <mxGeometry x="180" y="42" width="65" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="forumService" value="Forum / Thread Service" style="swimlane;startSize=28;fillColor=#fce4ec;strokeColor=#b85450;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="400" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="forumApi" value="Manages forums and threads" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;" vertex="1" parent="forumService">
+          <mxGeometry x="20" y="45" width="145" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="forumDb" value="Forum Store" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="forumService">
+          <mxGeometry x="180" y="42" width="65" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="messagingService" value="Messaging Service" style="swimlane;startSize=28;fillColor=#e1d5e7;strokeColor=#9673a6;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="400" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="messagingApi" value="Stores and delivers real-time messages" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;" vertex="1" parent="messagingService">
+          <mxGeometry x="20" y="45" width="145" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="messagingDb" value="Message Store" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="messagingService">
+          <mxGeometry x="180" y="42" width="65" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="notificationService" value="Notification Service" style="swimlane;startSize=28;fillColor=#fff9e6;strokeColor=#d6b656;html=1;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="400" width="260" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="notificationApi" value="Stores and delivers real-time notifications" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;" vertex="1" parent="notificationService">
+          <mxGeometry x="20" y="45" width="145" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="notificationDb" value="Notification Store" style="shape=cylinder3;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="notificationService">
+          <mxGeometry x="180" y="42" width="65" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="Account access" edge="1" parent="1" source="user" target="userApi" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="Server membership" edge="1" parent="1" source="userApi" target="serverApi" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="Channel ownership" edge="1" parent="1" source="serverApi" target="channelApi" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="Forum scope" edge="1" parent="1" source="serverApi" target="forumApi" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="Message delivery" edge="1" parent="1" source="channelApi" target="messagingApi" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" value="Thread activity" edge="1" parent="1" source="forumApi" target="messagingApi" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" value="User notifications" edge="1" parent="1" source="messagingApi" target="notificationApi" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" value="Notification events" edge="1" parent="1" source="serverApi" target="notificationApi" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;endArrow=classic;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" value="Notification delivery" edge="1" parent="1" source="notificationApi" target="user" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
