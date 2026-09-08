@@ -1,2 +1,0 @@
-Indexer/enron/full.tar.gz filter=lfs diff=lfs merge=lfs -text
-Indexer/enron/mini.tar.gz filter=lfs diff=lfs merge=lfs -text
