@@ -23,13 +23,13 @@
           <mxGeometry height="140" width="280" x="1270" y="300" as="geometry" />
         </mxCell>
         <mxCell id="channelService" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="Channel Service&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Manages channels and channel settings&lt;/span&gt;" vertex="1">
-          <mxGeometry height="140" width="280" x="430" y="490" as="geometry" />
+          <mxGeometry height="140" width="280" x="420" y="480" as="geometry" />
         </mxCell>
         <mxCell id="forumService" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="Forum / Thread Service&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Manages forum posts and threads&lt;/span&gt;" vertex="1">
-          <mxGeometry height="140" width="280" x="430" y="670" as="geometry" />
+          <mxGeometry height="140" width="280" x="420" y="660" as="geometry" />
         </mxCell>
         <mxCell id="eventService" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=15;fontStyle=1;align=center;verticalAlign=middle;" value="Event / Meeting Service&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Manages events and meetings&lt;/span&gt;" vertex="1">
-          <mxGeometry height="140" width="280" x="430" y="840" as="geometry" />
+          <mxGeometry height="140" width="280" x="420" y="830" as="geometry" />
         </mxCell>
         <mxCell id="e1" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="userService" value="">
           <mxGeometry relative="1" as="geometry" />
@@ -39,14 +39,6 @@
         </mxCell>
         <mxCell id="e3" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="messagingService" value="Messages">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="e4" edge="1" parent="1" source="client" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" target="notificationService" value="Notifications">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="770" y="250" />
-              <mxPoint x="1410" y="250" />
-            </Array>
-          </mxGeometry>
         </mxCell>
         <mxCell id="e8" edge="1" parent="1" source="messagingService" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;dashed=1;" target="notificationService" value="Message events">
           <mxGeometry relative="1" as="geometry" />
